@@ -1,0 +1,3 @@
+{# React components can be registered in assets/js/react/map.js #}
+
+<div data-react="{{ name|escape('html_attr') }}" data-react-props="{{ props|default({})|serialize('json')|escape('html_attr') }}">{% block placeholder %}{% endblock %}</div>
