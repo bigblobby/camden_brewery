@@ -1,0 +1,87 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000;
+    min-height: 70px;
+}
+
+// ----- Main links ----- //
+.main-footer {
+    .navigation--container {
+        flex-grow: 1;
+        margin-top: 1rem;
+
+        @include media-breakpoint-up(md){
+            height: 70px;
+            margin-top: 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+            @include media-breakpoint-up(md){
+                flex-direction: row;
+                width: auto;
+            }
+
+            .navigation-list-item {
+                .navigation-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    height: 100%;
+                    color: #fff;
+                    padding: 0.25rem 0.75rem;
+                    transition: color 0.2s ease;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #e40421;
+                    }
+                }
+            }
+        }
+    }
+}
+// ----- Main links (END)----- //
+
+// ----- Social icons ----- //
+.main-footer {
+    .social-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        height: 70px;
+        width: 100%;
+
+        @include media-breakpoint-up(md){
+            width: auto;
+        }
+
+        .social-icon--container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: #e40421;
+            color: #fff;
+            border-radius: 50%;
+            margin: 0.75rem;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                text-decoration: none;
+                background-color: darken(#e40421, 20%);
+            }
+        }
+    }
+}
+// ----- Social icons (END)----- //
