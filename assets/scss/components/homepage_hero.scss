@@ -1,0 +1,123 @@
+.homepage-hero {
+    .hero-beer-details {
+        .beer-detail {
+            background-color: #e40421;
+            padding: 3rem 0 10rem 0;
+
+            @include media-breakpoint-up(xl){
+                padding: 3rem 0 20rem 0;
+            }
+
+            @media screen and (min-width: 1600px){
+                padding: 3rem 0 17.5rem 0;
+            }
+
+            img {
+                display: block;
+                width: 150px;
+                margin: 0 auto;
+
+                @include media-breakpoint-up(xl){
+                    width: 200px;
+                }
+            }
+
+            h1, h2 {
+                color: #fff;
+                font-size: 2rem;
+                font-family: 'gotham';
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 1.5rem;
+                padding: 0 1rem;
+
+                @include media-breakpoint-up(sm){
+                    font-size: 2rem;
+                }
+
+                @include media-breakpoint-up(md){
+                    font-size: 4.25rem;
+                }
+
+                @include media-breakpoint-up(xl){
+                    font-size: 6rem;
+                }
+
+                @media screen and (min-width: 1600px){
+                    font-size: 7rem;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.homepage-hero {
+    .hero-beer-list {
+        display: none;
+        width: 100%;
+        max-width: 1400px;
+        margin: -6rem auto 0;
+        padding: 0 2rem;
+
+        @include media-breakpoint-up(md){
+            display: flex;
+        }
+
+        @include media-breakpoint-up(lg){
+            margin: -8rem auto 0;
+        }
+
+        @media screen and (min-width: 1600px){
+            padding: 0;
+        }
+
+        .hero-beer-item {
+            flex: 0 0 14.28%;
+
+            a {
+                position: relative;
+                display: block;
+
+                &:hover {
+                    text-decoration: none;
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-color: #000;
+                    height: 3px;
+                    width: 100%;
+                    opacity: 0;
+
+                    @include media-breakpoint-up(xl){
+                        height: 5px;
+                    }
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    font-family: gotham;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #000;
+
+                    @include media-breakpoint-up(xl){
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -18,4 +18,10 @@ ul {
         border-bottom: 1.25rem solid #fff;
         border-right: 1.25rem solid #fff;
     }
+
+    @media screen and (min-width: 1600px){
+        border-left: 2rem solid #fff;
+        border-bottom: 2rem solid #fff;
+        border-right: 2rem solid #fff;
+    }
 }
