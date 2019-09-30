@@ -1,0 +1,53 @@
+// ----- Primary Button ----- //
+.button-primary {
+    position: relative;
+    display: inline-block;
+    font-family: Neusa;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    border: 4px solid #000;
+    font-size: 2rem;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0.5625em 0 -0.3125em;
+
+    &:hover {
+        color: lighten(#000, 10);
+        border: 4px solid lighten(#000, 10);
+        text-decoration: none;
+        transform: translateY(0.125rem);
+        box-shadow: 0 0.5em 0 -0.3125em;
+
+        &:before {
+            border-width: 0 0.3125em 0.1875em 0;
+            border-color: transparent lighten(#000, 10) transparent transparent;
+        }
+        &:after {
+            border-width: 0.1875em 0.3125em 0 0;
+            border-color: lighten(#000, 10) transparent transparent transparent;
+        }
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        top: calc(100% + 0.125em);
+        display: block;
+        border-style: solid;
+    }
+
+    &:before {
+        left: -0.125em;
+        border-width: 0 0.3125em 0.25em 0;
+        border-color: transparent #000 transparent transparent;
+    }
+
+    &:after {
+        right: -0.125em;
+        border-width: 0.25em 0.3125em 0 0;
+        border-color: #000 transparent transparent transparent;
+    }
+}
+// ----- Primary Button (END)----- //

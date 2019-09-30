@@ -1,8 +1,15 @@
 .homepage-hero {
+    @include media-breakpoint-down(sm){
+        background-color: $camden-red;
+    }
+}
+
+// ----- Hero top section ----- //
+.homepage-hero {
     .hero-beer-details {
         .beer-detail {
             background-color: #e40421;
-            padding: 3rem 0 10rem 0;
+            padding: 3rem 0 5rem 0;
 
             @include media-breakpoint-up(xl){
                 padding: 3rem 0 20rem 0;
@@ -52,7 +59,9 @@
         }
     }
 }
+// ----- Hero top section (END)----- //
 
+// ----- Hero bottom section / beer list ----- //
 .homepage-hero {
     .hero-beer-list {
         display: none;
@@ -67,6 +76,10 @@
 
         @include media-breakpoint-up(lg){
             margin: -8rem auto 0;
+        }
+
+        @include media-breakpoint-up(xl){
+            margin: -10rem auto 0;
         }
 
         @media screen and (min-width: 1600px){
@@ -113,7 +126,7 @@
                     text-align: center;
                     color: #000;
 
-                    @include media-breakpoint-up(xl){
+                    @media screen and (min-width: 1600px){
                         font-size: 1.5rem;
                     }
                 }
@@ -121,3 +134,4 @@
         }
     }
 }
+// ----- Hero bottom section / beer list (END)----- //
