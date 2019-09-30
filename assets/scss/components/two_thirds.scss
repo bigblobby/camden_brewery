@@ -1,0 +1,73 @@
+// ----- Main style ----- //
+.two-thirds {
+    display: flex;
+    flex-wrap: wrap;
+}
+// ----- Main style (END)----- //
+
+// ----- Image container ----- //
+.two-thirds {
+    .two-thirds--image-container {
+        flex: 0 0 100%;
+
+        @include media-breakpoint-up(md){
+            flex: 0 0 66.66666%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+// ----- Image container (END)----- //
+
+// ----- Text container ----- //
+.two-thirds {
+    .two-thirds--text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100%;
+        background-color: $camden-red;
+
+        .wrapper {
+            padding: 3rem 1rem;
+
+            .sub-title,
+            .title,
+            .text {
+                text-align: center;
+            }
+
+            .sub-title {
+                font-family: gotham;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                line-height: 22px;
+                color: #000;
+                margin-bottom: 0.5rem;
+            }
+            .title {
+                font-family: gotham;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                line-height: 40px;
+                color: #fff;
+                margin-bottom: 0.5rem;
+            }
+            .text {
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+
+
+
+        @include media-breakpoint-up(md){
+            flex: 0 0 33.33333%;
+        }
+    }
+}
+// ----- Text container (END)----- //
